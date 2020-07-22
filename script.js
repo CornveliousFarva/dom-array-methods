@@ -10,3 +10,13 @@ let data = [];
 getRandomUser();
 getRandomUser();
 getRandomUser();
+
+// Fetch random user and add money
+// Doubles everyone's money
+// Sorts users by richest
+// Filter only millionaires
+// Calculate the total wealth
+// Add new obj to data arr
+// Update DOM
+// Format number as money
+// Event listeners
