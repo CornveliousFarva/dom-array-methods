@@ -78,6 +78,10 @@ function updateDOM(providedData = data) {
     });
   }
 // Format number as money
+format-numbers-as-currency-string
+function formatMoney(number) {
+  return '$' + number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+}
 // Event listeners
 addUserBtn.addEventListener('click', getRandomUser);
 doubleBtn.addEventListener('click', doubleMoney);
