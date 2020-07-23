@@ -26,6 +26,13 @@ async function getRandomUser(){
     addData(newUser);
 }
 // Doubles everyone's money
+function doubleMoney(){
+    data = data.map(user => {
+        return { ...user, money: user.money * 2};
+    })
+
+    updateDOM();
+}
 // Sorts users by richest
 // Filter only millionaires
 // Calculate the total wealth
@@ -34,4 +41,4 @@ async function getRandomUser(){
 // Format number as money
 // Event listeners
 addUserBtn.addEventListener('click', getRandomUser);
-doubleBtn.addEventListener('click', doubleMoney;)
+doubleBtn.addEventListener('click', doubleMoney);
