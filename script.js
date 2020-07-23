@@ -34,6 +34,13 @@ function doubleMoney(){
     updateDOM();
 }
 // Sorts users by richest
+function sortByRichest() {
+    console.log(123);
+    data.sort((a, b) => b.money - a.money);
+  
+    updateDOM();
+  }
+  
 // Filter only millionaires
 // Calculate the total wealth
 // Add new obj to data arr
