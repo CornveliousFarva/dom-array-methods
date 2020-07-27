@@ -78,7 +78,7 @@ function updateDOM(providedData = data) {
     });
   }
 // Format number as money
-format-numbers-as-currency-string
+// format-numbers-as-currency-string
 function formatMoney(number) {
   return '$' + number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }
